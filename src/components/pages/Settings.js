@@ -1,10 +1,9 @@
 import React from 'react';
 
-const Housekeeping = () => {
+const Settings = () => {
   return (
     <div>
       <h1>Housekeeping Page</h1>
-      {/* Add the accordion HTML structure */}
       <div class="accordion" id="accordionExample">
         {/* Accordion Item #1 */}
         <div class="accordion-item">
@@ -52,4 +51,4 @@ const Housekeeping = () => {
   );
 };
 
-export default Housekeeping;
+export default Settings;

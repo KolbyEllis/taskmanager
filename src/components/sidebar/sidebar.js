@@ -2,34 +2,35 @@ import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import './sidebar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCog, faComments, faClipboardList, faHouse, faBroom, faWrench } from '@fortawesome/free-solid-svg-icons'; 
+import { faCog, faComments, faClipboardList, faHouse, faBroom, faWrench } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 export default props => {
   return (
     <Menu>
-      <a className="menu-item" href="/">
-          <h1>Task Manager</h1>
-      </a>
-      <a className="menu-item" href="/">
+      <Link className="menu-item" to="/">
+        <h1>Task Manager</h1>
+      </Link>
+      <Link className="menu-item" to="/">
         <FontAwesomeIcon icon={faHouse} className="menu-item-icon" />
         Dashboard
-      </a>
-      <a className="menu-item" src="Housekeeping.js">
+      </Link>
+      <Link className="menu-item" to="/housekeeping">
         <FontAwesomeIcon icon={faBroom} className="menu-item-icon" />
         Housekeeping
-      </a>
-      <a className="menu-item" href="/maintenance">
+      </Link>
+      <Link className="menu-item" to="/maintenance">
         <FontAwesomeIcon icon={faWrench} className="menu-item-icon" />
         Maintenance
-      </a>
-      <a className="menu-item" href="/messages">
+      </Link>
+      <Link className="menu-item" to="/messages">
         <FontAwesomeIcon icon={faComments} className="menu-item-icon" />
         Messages
-      </a>
-      <a className="menu-item" href="/settings">
+      </Link>
+      <Link className="menu-item" to="/settings">
         <FontAwesomeIcon icon={faCog} className="menu-item-icon" />
         Settings
-      </a>
+      </Link>
     </Menu>
   );
 };

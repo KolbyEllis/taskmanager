@@ -1,16 +1,29 @@
 import React from 'react';
 import Sidebar from './components/sidebar/sidebar';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Dashboard from './components/pages/Dashboard';
+import Housekeeping from './components/pages/Housekeeping';
+import Maintenance from './components/pages/Maintenance';
+import Messages from './components/pages/Messages';
+import Settings from './components/pages/Settings';
 import './App.css';
 
 function App() {
   return (
-    <div className="App" id="outer-container">
-      <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
-      <div id="page-wrap">
-        <h1>Cool Restaurant</h1>
-        <h2>Check out our offerings in the sidebar!</h2>
+    <Router>
+      <div className="App" id="outer-container">
+        <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
+        <div id="page-wrap">
+          <Routes>
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/housekeeping" element={<Housekeeping />} />
+            <Route path="/maintenance" element={<Maintenance />} />
+            <Route path="/messages" element={<Messages />} />
+            <Route path="/settings" element={<Settings />} />
+          </Routes>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
