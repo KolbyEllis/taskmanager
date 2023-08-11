@@ -1,0 +1,21 @@
+/* Apply gray background color to accordion headers */
+.accordion-header {
+    background-color: #f8f9fa; /* Bootstrap gray color */
+    border-color: #dee2e6; /* Border color */
+  }
+  
+  /* Style the accordion buttons */
+  .accordion-button {
+    color: #333; /* Text color */
+  }
+  
+  /* Set initial state for collapsed content */
+  .accordion-collapse {
+    display: none;
+  }
+  
+  /* Add spacing between accordion items */
+  .accordion-item + .accordion-item {
+    margin-top: 10px; /* Adjust spacing as needed */
+  }
+  

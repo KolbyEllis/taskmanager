@@ -1,0 +1,22 @@
+button {
+    background-color: #f0f0f0; /* Your whitish grey color */
+    border: none;
+    text-align: left;
+    width: 100%;
+    padding: 0.375rem 1.5rem;
+    font-size: 1.25rem;
+  }
+ p {
+    font-size: 20px;
+    margin-top: 20px;
+ }
+
+ button:hover {
+    background-color: #6c757d;
+ }
+ button:active {
+    transform: scale(0.95);
+ }
+ button:focus {
+    outline: none;
+ }

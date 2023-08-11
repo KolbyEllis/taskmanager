@@ -1,11 +1,11 @@
 import React from 'react';
 import Sidebar from './components/sidebar/sidebar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Dashboard from './components/pages/Dashboard';
-import Housekeeping from './components/pages/Housekeeping';
-import Maintenance from './components/pages/Maintenance';
-import Messages from './components/pages/Messages';
-import Settings from './components/pages/Settings';
+import Dashboard from './components/pages/Dashboard/Dashboard';
+import Housekeeping from './components/pages/Housekeeping/Housekeeping';
+import Maintenance from './components/pages/Maintenance/Maintenance';
+import Messages from './components/pages/Messages/Messages';
+import Settings from './components/pages/Settings/Settings';
 import './App.css';
 
 function App() {

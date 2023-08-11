@@ -34,7 +34,9 @@
   */
   .bm-menu-wrap {
     position: fixed;
+    width: 250px; /* Adjust the width as needed */
     height: 100%;
+    left: 0; /* Adjust the left positioning */
   }
   
   /* General sidebar styles */
